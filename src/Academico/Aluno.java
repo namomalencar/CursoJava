@@ -50,22 +50,22 @@ public class Aluno {
 		float media = calcMedia();
 		if (media >= 7) {
 			System.out.println("O aluno " + nome + " foi aprovado com a media: " + media);
-			System.exit(0);
+//			System.exit(0);
 		}
 
 		if (media >= 5) {
 			System.out.println("O aluno " + nome + " ficou de recuperação com a media: " + media);
-			System.exit(0);
+//			System.exit(0);
 		}
 
 		if (media >= 4) {
 			System.out.println("O aluno " + nome + " ficou de recuperação + trabalho com a media: " + media);
-			System.exit(0);
+//			System.exit(0);
 		}
 
 		if (media < 4) {
 			System.out.println("O aluno " + nome + " foi reprovado com a media: " + media);
-			System.exit(0);
+//			System.exit(0);
 		}
 	}
 
