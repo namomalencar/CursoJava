@@ -10,23 +10,6 @@ public class Principal {
 	int x = matricula.matricula;
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
-		menuOpcoes();
-	}
-
-	private static void menuOpcoes() {
-		Scanner s = new Scanner(System.in);
-		String escolha = "";
-		System.out.println("===Opções===");
-		System.out.println("1 - Para inserir novo aluno");
-		System.out.println("Qualquer outro caracter para sair");
-		escolha = s.nextLine().toUpperCase();
-		switch (escolha) {
-		case ("1"):
-			inserirAluno();
-		default:
-			System.out.println("Fim");
-=======
 		menuDeOpcoes();
 	}
 
@@ -78,20 +61,11 @@ public class Principal {
 			break;
 		default:
 			System.out.println("Fim do programa!");
->>>>>>> 2591725892abe91f49191a5ad02bcfb5c0c2bac1
 			break;
 		}
 
 	}
 
-<<<<<<< HEAD
-	public static void inserirAluno() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Inserir nova nota para um aluno");
-		System.out.println("Digite o nome do aluno: ");
-		String nome = s.nextLine();
-		Aluno aluno = new Aluno(nome);
-=======
 	private static void editarAluno(int posicao) {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Digite o novo nome do " + listaDeAlunos.get(posicao).getNome() + " que tem matricula"
@@ -148,7 +122,6 @@ public class Principal {
 		matricula.novaMatricula();
 		System.out.println("Digite o nome do aluno: ");
 		Aluno aluno = new Aluno("2016" + matricula.matricula, s.nextLine());
->>>>>>> 2591725892abe91f49191a5ad02bcfb5c0c2bac1
 		System.out.println("Digite a sua primeira nota " + aluno.getNome() + ": ");
 		while (aluno.getNota1() < 0 || aluno.getNota1() > 10) {
 			aluno.setNota1(Float.parseFloat(s.nextLine()));
@@ -167,13 +140,9 @@ public class Principal {
 			}
 		}
 		aluno.imprimirResultado();
-<<<<<<< HEAD
-		menuOpcoes();
-=======
 		listaDeAlunos.add(aluno);
 		menuDeOpcoes();
 
->>>>>>> 2591725892abe91f49191a5ad02bcfb5c0c2bac1
 	}
 
 }

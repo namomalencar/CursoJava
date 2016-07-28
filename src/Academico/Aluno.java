@@ -54,39 +54,25 @@ public class Aluno {
 	public void imprimirResultado() {
 		float media = calcMedia();
 		if (media >= 7) {
-<<<<<<< HEAD
-			System.out.println("O aluno " + nome + " foi aprovado com a media: " + media);
-//			System.exit(0);
-		}
 
-		if (media >= 5) {
-			System.out.println("O aluno " + nome + " ficou de recuperação com a media: " + media);
-//			System.exit(0);
-		}
-
-		if (media >= 4) {
-			System.out.println("O aluno " + nome + " ficou de recuperação + trabalho com a media: " + media);
-//			System.exit(0);
-		}
-
-		if (media < 4) {
-			System.out.println("O aluno " + nome + " foi reprovado com a media: " + media);
-//			System.exit(0);
-=======
-			System.out.println("O aluno " + nome + " com matricula "+matricula+" foi aprovado com a media: " + media);
+			System.out
+					.println("O aluno " + nome + " com matricula " + matricula + " foi aprovado com a media: " + media);
 		}
 
 		if (media >= 5 && media < 7) {
-			System.out.println("O aluno " + nome + " com matricula "+matricula+" ficou de recuperação com a media: " + media);
+			System.out.println(
+					"O aluno " + nome + " com matricula " + matricula + " ficou de recuperação com a media: " + media);
 		}
 
 		if (media >= 4 && media < 5) {
-			System.out.println("O aluno " + nome + " com matricula "+matricula+" ficou de recuperação + trabalho com a media: " + media);
+			System.out.println("O aluno " + nome + " com matricula " + matricula
+					+ " ficou de recuperação + trabalho com a media: " + media);
 		}
 
 		if (media < 4) {
-			System.out.println("O aluno " + nome + " com matricula "+matricula+" foi reprovado com a media: " + media);
->>>>>>> 2591725892abe91f49191a5ad02bcfb5c0c2bac1
+			System.out.println(
+					"O aluno " + nome + " com matricula " + matricula + " foi reprovado com a media: " + media);
+
 		}
 	}
 
