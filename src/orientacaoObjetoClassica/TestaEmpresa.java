@@ -3,10 +3,10 @@ package orientacaoObjetoClassica;
 public class TestaEmpresa {
 	public static void main(String[] args) {
 		
-		String abc [] = new String[-1];
+		//String abc [] = new String[-1];
 		//abc[0] ="abncasd";
-		System.out.println(abc.length);
-		System.exit(0);
+		//System.out.println(abc.length);
+		//System.exit(0);
 		
 		Empresa objEmpresa = new Empresa();
 		objEmpresa.nomeDaEmpresa = "Empresa do Milhão";
