@@ -29,10 +29,10 @@ public class Empresa {
 	void verificarFuncionario(Funcionario f) {
 		for (int i = 0; i < pos; i++) {
 			if (empregados[i] == f) {
-				if (empregados[i].estaAtivo == true) {
-					System.out.println("O funcionario " + empregados[i].nome + " esta ativo");
+				if (empregados[i].getEstaAtivo() == true) {
+					System.out.println("O funcionario " + empregados[i].getNome() + " esta ativo");
 				} else {
-					System.out.println("O funcionario " + empregados[i].nome + " NAO esta ativo");
+					System.out.println("O funcionario " + empregados[i].getNome() + " NAO esta ativo");
 				}
 			}
 		}

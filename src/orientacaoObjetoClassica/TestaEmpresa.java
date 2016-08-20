@@ -14,30 +14,30 @@ public class TestaEmpresa {
 		objEmpresa.empregados = new Funcionario[10];
 		
 		Funcionario f1 = new Funcionario();
-		f1.nome = "Namom";
-		f1.salario = 100;
+		f1.setNome("Namom");
+		f1.setSalario(100);
 		
 		objEmpresa.adiciona(f1);
 		
-		Funcionario f2 = new Funcionario();
-		f2.nome = "Amanda";
-		f2.salario = 200;
+		Funcionario f2 = new Funcionario("Amanda");
+		//f2.setNome("Amanda");
+		f2.setSalario(200);
 		
 		objEmpresa.adiciona(f2);
 		
 		for(int i = 0 ; i<=10; i++){
 			Funcionario f = new Funcionario();
-			f.nome = "Nome "+i;
-			f.salario = 100 *i;
+			f.setNome("Nome "+i);
+			f.setSalario(100 *i);
 			objEmpresa.adiciona(f);
 		}
 		
-		f1.estaAtivo = true;
+		f1.setEstaAtivo(true);
 		objEmpresa.verificarFuncionario(f1);
 
 		Funcionario f16 = new Funcionario();
-		f16.estaAtivo = true;
-		f16.nome = "Aviao de caça";
+		f16.setEstaAtivo(true);
+		f16.setNome("Aviao de caça");
 		objEmpresa.verificarFuncionario(f16);
 		
 		objEmpresa.mostraFuncionariosDaEmpresa();
