@@ -3,8 +3,8 @@ package orientacaoObjetoClassica;
 public class TestaFuncionario {
 
 	public static void main(String[] args) {
-		Funcionario f1 = new Funcionario();
-
+		//Funcionario f1 = new Funcionario();
+		Gerente f1 = new Gerente();
 		f1.setNome("Namom");
 		f1.setSalario(100);
 		System.out.println("Salario atual: " + f1.getSalario());
@@ -13,11 +13,13 @@ public class TestaFuncionario {
 		System.out.println("Salario depois do aumento: " + f1.getSalario());
 		System.out.println(f1.calculaGanhoAnual());
 		f1.mostra();
+		System.out.println("A bonificação do funcionario "+f1.getNome()+" é: "+f1.getBonificacao());
 		Data dataDoF1 = new Data();
 		f1.setDataDeEntrada(dataDoF1);
-		f1.getDataDeEntrada().dia = 10;
-		f1.getDataDeEntrada().mes = 10;
-		f1.getDataDeEntrada().ano = 2016;
+		f1.getDataDeEntrada().setDataCompleta(10, 10, 2016);
+//		f1.getDataDeEntrada().dia = 10;
+//		f1.getDataDeEntrada().mes = 10;
+//		f1.getDataDeEntrada().ano = 2016;
 		f1.mostra();
 		
 		

@@ -2,10 +2,17 @@ package orientacaoObjetoClassica;
 
 public class Empresa {
 
-	String nomeDaEmpresa;
-	String cnpj;
-	Funcionario empregados[];
-	int pos = 0;
+	private String nomeDaEmpresa;
+	private String cnpj;
+	private Funcionario empregados[];
+	private int pos = 0;
+
+	public Empresa() {
+	}
+
+	public Empresa(int i) {
+		this.empregados = new Funcionario[i];
+	}
 
 	void adiciona(Funcionario f) {
 		if (pos < empregados.length) {
@@ -44,6 +51,30 @@ public class Empresa {
 			f.mostra();
 			System.out.println("===================");
 		}
+	}
+
+	public String getNomeDaEmpresa() {
+		return nomeDaEmpresa;
+	}
+
+	public void setNomeDaEmpresa(String nomeDaEmpresa) {
+		this.nomeDaEmpresa = nomeDaEmpresa;
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public Funcionario[] getEmpregados() {
+		return empregados;
+	}
+
+	public void setEmpregados(Funcionario[] empregados) {
+		this.empregados = empregados;
 	}
 
 }

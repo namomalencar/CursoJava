@@ -8,10 +8,13 @@ public class TestaEmpresa {
 		//System.out.println(abc.length);
 		//System.exit(0);
 		
-		Empresa objEmpresa = new Empresa();
-		objEmpresa.nomeDaEmpresa = "Empresa do Milhão";
-		objEmpresa.cnpj = "0001Algumacoisa";
-		objEmpresa.empregados = new Funcionario[10];
+		Empresa objEmpresa = new Empresa(10);
+		objEmpresa.setNomeDaEmpresa("Empresa do Milhão");
+		//objEmpresa.nomeDaEmpresa = "Empresa do Milhão";
+		objEmpresa.setCnpj("0001Algumacoisa");
+		//objEmpresa.cnpj = "0001Algumacoisa";
+		//objEmpresa.setEmpregados(new Funcionario[10]);
+		//objEmpresa.empregados = new Funcionario[10];
 		
 		Funcionario f1 = new Funcionario();
 		f1.setNome("Namom");

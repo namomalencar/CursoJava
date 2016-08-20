@@ -7,15 +7,26 @@ public class Funcionario {
 	private String departamento;
 	private String rg;
 	private Boolean estaAtivo;
-	
-	public Funcionario(String nome){
+	private static int totalDeFuncionarios = 0;
+	private int identificador;
+
+	public Funcionario(String nome) {
 		this.nome = nome;
+		this.setIdentificador(Funcionario.totalDeFuncionarios + 1);
 	}
 
-	public Funcionario(){
-		
+	public Funcionario() {
+		this.setIdentificador(Funcionario.totalDeFuncionarios + 1);
 	}
-	
+
+	private void setIdentificador(int id) {
+		this.identificador = id;
+	}
+
+	public int getIdentificador() {
+		return this.identificador;
+	}
+
 	void recebeAumento(double aumento) {
 		this.salario = this.salario + aumento;
 	}
@@ -31,6 +42,10 @@ public class Funcionario {
 		System.out.println("Departamento: " + this.departamento);
 		System.out.println("RG: " + this.rg);
 		System.out.println("estaAtivo: " + this.estaAtivo);
+	}
+
+	public double getBonificacao() {
+		return this.salario * 0.10;
 	}
 
 	public String getNome() {
@@ -80,6 +95,5 @@ public class Funcionario {
 	public void setEstaAtivo(Boolean estaAtivo) {
 		this.estaAtivo = estaAtivo;
 	}
-	
-	
+
 }
