@@ -22,29 +22,15 @@ public class TestaFuncionario {
 //		f1.getDataDeEntrada().ano = 2016;
 		f1.mostra();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		Funcionario f2 = new Funcionario();
 		f2.setNome("Jose");
-		Funcionario f3 = f2; 
-		f2.setNome("Maria");
-		System.out.println("f3: "+ f3.getNome());
-		System.out.println("f2: "+ f2.getNome());
-		//= new Funcionario();
-		//f3.nome = "Jose";
-		if(f2 == f3){
-			System.out.println("Iguais");
-		}else{
-			System.out.println("Diferentes");
-		}
+		f2.setSalario(1000);
 		
+		Bonificacao b = new Bonificacao();
+		b.resgistra(f1);
+		System.out.println(b.getTotalDeBonicacoes());
+		b.resgistra(f2);
+		System.out.println(b.getTotalDeBonicacoes());
 	}
 
 }

@@ -13,13 +13,21 @@ public class Conta {
 	}
 	
 	public void deposita(double valor){
-		this.saldo = this.saldo+valor;
+		this.saldo = this.saldo + valor;
 	}
 	
 	public void transfere(Conta outraConta, double valor){
 		this.saca(valor);
 		outraConta.deposita(valor);
 		System.out.println("Transferencia Concluida");
+	}
+	
+	public void atualiza(double taxa){
+		this.saldo += this.saldo*taxa;
+	}
+	
+	public double getSaldo(){
+		return this.saldo;
 	}
 	
 	
