@@ -1,11 +1,11 @@
 package orientacaoObjetoClassica;
 
-public class Conta {
+public abstract class Conta {
 	
 	private static int totalDeContas;
 	private int numeroDaConta;
 	private Cliente titular;
-	private double saldo;
+	protected double saldo;
 	private double limite;
 	
 	public void saca(double valor){
@@ -22,9 +22,7 @@ public class Conta {
 		System.out.println("Transferencia Concluida");
 	}
 	
-	public void atualiza(double taxa){
-		this.saldo += this.saldo*taxa;
-	}
+	public abstract void atualiza(double taxa);
 	
 	public double getSaldo(){
 		return this.saldo;

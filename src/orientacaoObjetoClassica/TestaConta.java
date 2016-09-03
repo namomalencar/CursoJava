@@ -12,6 +12,7 @@ public class TestaConta {
 		double taxa = 0.2;
 		controle.atualizandoConta(cc, taxa);
 		controle.atualizandoConta(cp, taxa);
+		System.out.println("O saldo total do banco é: "+controle.getSaldoTotal());
 		
 		
 		/* Exercicio 4 
