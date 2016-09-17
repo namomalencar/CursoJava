@@ -13,7 +13,13 @@ public abstract class Conta {
 	}
 	
 	public void deposita(double valor){
-		this.saldo = this.saldo + valor;
+		if(valor < 0){
+			throw new ValorInvalidoException("Nao é possivel depositar valores menor que zero, "
+					+ "você tentou depositar: "+valor);
+		}else{
+			this.saldo = this.saldo + valor;	
+		}
+		
 	}
 	
 	public void transfere(Conta outraConta, double valor){
