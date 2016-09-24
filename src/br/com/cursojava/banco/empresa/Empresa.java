@@ -1,4 +1,6 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.empresa;
+
+import br.com.cursojava.banco.funcionario.Funcionario;
 
 public class Empresa {
 
@@ -14,7 +16,7 @@ public class Empresa {
 		this.empregados = new Funcionario[i];
 	}
 
-	void adiciona(Funcionario f) {
+	public void adiciona(Funcionario f) {
 		if (pos < empregados.length) {
 			empregados[pos] = f;
 			pos = pos + 1;
@@ -33,7 +35,7 @@ public class Empresa {
 		pos = empregadosAux.length;
 	}
 
-	void verificarFuncionario(Funcionario f) {
+	public void verificarFuncionario(Funcionario f) {
 		for (int i = 0; i < pos; i++) {
 			if (empregados[i] == f) {
 				if (empregados[i].getEstaAtivo() == true) {
@@ -45,7 +47,7 @@ public class Empresa {
 		}
 	}
 
-	void mostraFuncionariosDaEmpresa() {
+	public void mostraFuncionariosDaEmpresa() {
 		for (int i = 0; i < pos; i++) {
 			Funcionario f = empregados[i];
 			f.mostra();

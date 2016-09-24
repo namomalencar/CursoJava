@@ -1,4 +1,8 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco;
+
+import br.com.cursojava.banco.conta.ContaCorrente;
+import br.com.cursojava.banco.conta.ContaPoupanca;
+import br.com.cursojava.banco.util.ControleDeContas;
 
 public class TestaConta {
 	

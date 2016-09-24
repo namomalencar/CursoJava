@@ -1,4 +1,9 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco;
+
+import br.com.cursojava.banco.funcionario.Funcionario;
+import br.com.cursojava.banco.funcionario.Gerente;
+import br.com.cursojava.banco.util.Bonificacao;
+import br.com.cursojava.banco.util.Data;
 
 public class TestaFuncionario {
 

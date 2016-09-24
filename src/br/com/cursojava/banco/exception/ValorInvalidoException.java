@@ -1,9 +1,9 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.exception;
 
 public class ValorInvalidoException extends RuntimeException {
 
 	
-	ValorInvalidoException(String message) {
+	public ValorInvalidoException(String message) {
 		super(message);
 	}
 

@@ -1,4 +1,6 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.conta;
+
+import br.com.cursojava.banco.interfaces.Tributavel;
 
 public class ContaCorrente extends Conta implements Tributavel{
 

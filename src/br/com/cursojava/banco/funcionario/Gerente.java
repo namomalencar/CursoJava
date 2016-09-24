@@ -1,4 +1,6 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.funcionario;
+
+import br.com.cursojava.banco.interfaces.Autenticavel;
 
 public class Gerente extends Funcionario implements Autenticavel {
 

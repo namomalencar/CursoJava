@@ -1,4 +1,4 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.util;
 
 public class Data {
 

@@ -1,4 +1,6 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.util;
+
+import br.com.cursojava.banco.funcionario.Funcionario;
 
 public class Bonificacao {
 	

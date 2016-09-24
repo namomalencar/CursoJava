@@ -1,4 +1,6 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.funcionario;
+
+import br.com.cursojava.banco.util.Data;
 
 public class Funcionario {
 	private String nome;
@@ -27,15 +29,15 @@ public class Funcionario {
 		return this.identificador;
 	}
 
-	void recebeAumento(double aumento) {
+	public void recebeAumento(double aumento) {
 		this.salario = this.salario + aumento;
 	}
 
-	String calculaGanhoAnual() {
+	public String calculaGanhoAnual() {
 		return "O ganho anual de " + this.nome + " é: " + (this.salario * 12);
 	}
 
-	void mostra() {
+	public void mostra() {
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Salario: " + this.salario);
 		System.out.println("Data De Entrada: " + this.dataDeEntrada.dataFormatada());

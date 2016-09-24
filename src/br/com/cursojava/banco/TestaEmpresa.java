@@ -1,4 +1,7 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco;
+
+import br.com.cursojava.banco.empresa.Empresa;
+import br.com.cursojava.banco.funcionario.Funcionario;
 
 public class TestaEmpresa {
 	public static void main(String[] args) {

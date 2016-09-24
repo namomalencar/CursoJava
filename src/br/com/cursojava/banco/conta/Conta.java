@@ -1,4 +1,7 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.conta;
+
+import br.com.cursojava.banco.cliente.Cliente;
+import br.com.cursojava.banco.exception.ValorInvalidoException;
 
 public abstract class Conta {
 	
@@ -12,7 +15,7 @@ public abstract class Conta {
 		this.saldo = this.saldo-valor;
 	}
 	
-	public void deposita(double valor){
+	public void deposita(double valor) throws ValorInvalidoException{
 		if(valor < 0){
 			throw new ValorInvalidoException("Nao é possivel depositar valores menor que zero, "
 					+ "você tentou depositar: "+valor);
@@ -24,7 +27,12 @@ public abstract class Conta {
 	
 	public void transfere(Conta outraConta, double valor){
 		this.saca(valor);
-		outraConta.deposita(valor);
+		try {
+			outraConta.deposita(valor);
+		} catch (ValorInvalidoException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Transferencia Concluida");
 	}
 	

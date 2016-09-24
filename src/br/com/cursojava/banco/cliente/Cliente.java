@@ -1,4 +1,7 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.cliente;
+
+import br.com.cursojava.banco.interfaces.Autenticavel;
+import br.com.cursojava.banco.util.Data;
 
 public class Cliente implements Autenticavel{
 	

@@ -1,4 +1,9 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco;
+
+import br.com.cursojava.banco.conta.ContaCorrente;
+import br.com.cursojava.banco.interfaces.Tributavel;
+import br.com.cursojava.banco.util.GerenciadorDeImpostoDeRenda;
+import br.com.cursojava.banco.util.SeguroDeVida;
 
 public class TesteTributavel {
 	

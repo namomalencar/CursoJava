@@ -1,4 +1,4 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco.conta;
 
 public class ContaPoupanca extends Conta{
 	

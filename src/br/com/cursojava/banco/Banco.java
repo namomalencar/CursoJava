@@ -1,4 +1,6 @@
-package orientacaoObjetoClassica;
+package br.com.cursojava.banco;
+
+import br.com.cursojava.banco.conta.Conta;
 
 public class Banco {
 	
