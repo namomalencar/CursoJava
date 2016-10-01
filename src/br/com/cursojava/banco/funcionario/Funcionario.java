@@ -45,6 +45,15 @@ public class Funcionario {
 		System.out.println("RG: " + this.rg);
 		System.out.println("estaAtivo: " + this.estaAtivo);
 	}
+	
+	public boolean equals(Object obj){
+		if(obj instanceof Funcionario){
+			if(this.rg.equals(((Funcionario) obj).getRg())){
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public double getBonificacao() {
 		return this.salario * 0.10;
