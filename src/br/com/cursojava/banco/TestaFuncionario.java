@@ -12,6 +12,8 @@ public class TestaFuncionario {
 		Gerente f1 = new Gerente();
 		f1.setNome("Namom");
 		f1.setSalario(100);
+		System.out.println(f1);
+		System.exit(0);
 		System.out.println("Salario atual: " + f1.getSalario());
 		System.out.println(f1.calculaGanhoAnual());
 		f1.recebeAumento(50);

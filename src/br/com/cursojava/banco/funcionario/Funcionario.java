@@ -36,6 +36,11 @@ public class Funcionario {
 	public String calculaGanhoAnual() {
 		return "O ganho anual de " + this.nome + " é: " + (this.salario * 12);
 	}
+	
+	@Override
+	public String toString(){
+		return "Nome do funcionario: "+this.getNome();
+	}
 
 	public void mostra() {
 		System.out.println("Nome: " + this.nome);

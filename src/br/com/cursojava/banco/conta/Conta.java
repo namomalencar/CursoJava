@@ -5,11 +5,13 @@ import br.com.cursojava.banco.exception.ValorInvalidoException;
 
 public abstract class Conta {
 	
-	private static int totalDeContas;
+	protected static int totalDeContas;
 	private int numeroDaConta;
 	private Cliente titular;
 	protected double saldo;
 	private double limite;
+	
+	
 	
 	public void saca(double valor){
 		this.saldo = this.saldo-valor;
@@ -42,6 +44,17 @@ public abstract class Conta {
 		return this.saldo;
 	}
 	
-	
+	@Override
+	public String toString(){
+		return "Esta conta possui "+this.getSaldo()+ " de saldo";
+	}
+
+	public int getNumeroDaConta() {
+		return numeroDaConta;
+	}
+
+	protected void setNumeroDaConta(int numeroDaConta) {
+		this.numeroDaConta = numeroDaConta;
+	}
 
 }
