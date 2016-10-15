@@ -1,31 +1,30 @@
 package br.com.cursojava.banco;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import br.com.cursojava.banco.conta.Conta;
 
 public class Banco {
 	
-	private Conta [] todasAsContasdoBanco;
-	private int pos = 0;
+	private Map<String, Conta> todasAsContasdoBanco = new HashMap<>();
 	
-	public Banco(){
-		
-	}
-	
-	public Banco(int tam){
-		this.todasAsContasdoBanco = new Conta[tam];
-	}
-
 	public void adcionarConta(Conta c){
-		this.todasAsContasdoBanco[pos] = c;
-		this.pos = this.pos + 1;
+		this.todasAsContasdoBanco.put(c.getTitular().getNomeDoTitular(), c);
 	}
 	
 	public Conta pegaConta(int x){
-		return this.todasAsContasdoBanco[x];
+		return this.todasAsContasdoBanco.get(x);
+	}
+	
+	public Conta pegaContaPeloNome(String nome){
+		return this.todasAsContasdoBanco.get(nome);
 	}
 	
 	public int pegaTotalDeContas(){
-		return this.pos;
+		return this.todasAsContasdoBanco.size();
 	}
 	
 	

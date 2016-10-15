@@ -7,7 +7,16 @@ public abstract class Conta {
 	
 	protected static int totalDeContas;
 	private int numeroDaConta;
-	private Cliente titular;
+	protected Cliente titular;
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+
 	protected double saldo;
 	private double limite;
 	
@@ -46,7 +55,7 @@ public abstract class Conta {
 	
 	@Override
 	public String toString(){
-		return "Esta conta possui "+this.getSaldo()+ " de saldo";
+		return "Esta conta possui "+this.getSaldo()+ " de saldo e o titular é: "+this.getTitular().getNomeDoTitular();
 	}
 
 	public int getNumeroDaConta() {
