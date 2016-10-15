@@ -16,6 +16,7 @@ public class TestaOrdenacao {
 
 	public static void main(String[] args) {	
 		
+		/*
 		ContaCorrente cm1 = new ContaCorrente();
 		cm1.deposita(10000);
 		ContaCorrente cm2 = new ContaCorrente();
@@ -37,15 +38,25 @@ public class TestaOrdenacao {
 		cargos.add("Diretor");// repetido
 		System.out.println(cargos);
 		System.exit(0);
-
+*/
 		List<String> lista = new ArrayList<>();
+		lista.add("Marcos Monteiro");
 		lista.add("Namom");
-		lista.add("Marcos");
-		lista.add("Angelo");
+		lista.add("Angelo Brayner");
 		System.out.println(lista);
-		Collections.sort(lista);
+		Collections.sort(lista, new ComparadorPorTamanho());
 		System.out.println(lista);
-
+		System.exit(0);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		ContaPoupanca c1 = new ContaPoupanca();
 		ContaPoupanca c2 = new ContaPoupanca();
 		ContaPoupanca c3 = new ContaPoupanca();
